@@ -4,13 +4,13 @@ var fs = require('fs')
   , alphabet = ('abcdefghijklmnopqrstuvwxyz').split('')
 
   , compose = function(str) {
-    if(str.length < length) {
-      alphabet.forEach(function(letter) {
-        compose(str + letter)
-      })
-    } else {
-      output.write(str + '\n')
+      if(str.length < length) {
+        alphabet.forEach(function(letter) {
+          compose(str + letter)
+        })
+      } else {
+        output.write(str + '\n')
+      }
     }
-  }
 
 compose('')

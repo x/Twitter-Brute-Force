@@ -12,16 +12,14 @@ var request = require('request')
         callback(err)
       })
     }, 10)
-
-
+  
 process.argv.splice(2).forEach(function(fileName) {
   
   fs.readFile('./' + fileName, 'utf8', function(err, data) {
     if(err) {
       return console.log(err);
     }
-    var lines = data.split('\n')
-    lines.forEach(function(line) {
+    data.split('\n').forEach(function(line) {
       if(line.length > 1) {
         q.push({name: line}, function(err) {
           if(err) {
@@ -32,5 +30,4 @@ process.argv.splice(2).forEach(function(fileName) {
       }
     })
   })
-
 })
