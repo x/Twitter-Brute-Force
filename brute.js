@@ -11,7 +11,7 @@ var request = require('request')
         }
         callback(err)
       })
-    }, 100)
+    }, 10)
 
 process.argv.splice(2).forEach(function(fileName) {
   
