@@ -14,6 +14,8 @@ Output goes to a file called output, errors go to error-log.
 node brute.js dictionary1 dictionary2 dictionary3
 ```
 
+brute.js responds to ```SIGUSR1``` with the current number of handles processed
+
 The other script, generate.js generates all permutations of the alphebet up to k characters.
 
 Takes some number k and the output file.

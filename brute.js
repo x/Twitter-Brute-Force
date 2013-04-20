@@ -19,7 +19,7 @@ var request = require('request')
 
 /* catch sigusr1 for an update */
 process.on('SIGUSR1', function(){
-  console.log('only '+processed +' handles have been processed. Press Ctrl+D to exit')
+  console.log(processed +' handles have been processed')
 })
 
 /* read all dictionaries */
