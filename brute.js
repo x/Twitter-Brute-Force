@@ -5,7 +5,7 @@ var request = require('request')
   , fileNames = process.argv.splice(2)
   , processed = 0
   , log
-  , reservedWords = ['post', 'session', 'join', 'apps', 'auth', 'list']
+  , reservedWords = ['post', 'session', 'join', 'apps', 'auth', 'list', 'root', 'phone']
 
   /* queue of requests with a pool of 10 async */
   , q = async.queue(function(task, callback) {
@@ -35,6 +35,7 @@ fileNames.forEach(function(fileName) {
       }
       if(reservedWords.indexOf(line) > 0) {
         console.log('ignoring '+line+' because it\'t a reserved by twitter')
+        return
       }
 
       /* push each word */

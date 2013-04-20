@@ -1,20 +1,18 @@
 # Twitter Brute Force
 
-Twitter Brute Force is a nice little script that takes a new-line-seperated dictionary and hammers the fuck out twitter to find which words are available as twitter handles.
-
-The script does __not__ use the Twitter REST API, it instead just queries the profile for a status code. As a result it returns reserved words such as 'nill', 'join', and 'apps' as available handles.
+Twitter Brute Force is a little script that takes a new-line-seperated dictionary and hammers the fuck out twitter to find which words are available as twitter handles.
 
 ## Usage
 
 The main script, brute.js takes multiple dictionaries as arguments.
 
-Output goes to a file called output, errors go to error-log.
+Available handles go to a file called ```available```.
 
 ```
 node brute.js dictionary1 dictionary2 dictionary3
 ```
 
-brute.js responds to ```SIGUSR1``` with the current number of handles processed
+brute.js responds to ```SIGUSR1``` with the current number of handles processed.
 
 The other script, generate.js generates all permutations of the alphebet up to k characters.
 
