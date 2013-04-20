@@ -2,6 +2,8 @@
 
 Twitter Brute Force is a little script that takes a new-line-seperated dictionary and hammers the fuck out twitter to find which words are available as twitter handles.
 
+To avoid rate limiting, this script does __not__ use the Twitter REST API, it instead queries for the presumed profile's status code. As a result it generates false-positives on reserved account names.
+
 ## Usage
 
 The main script, brute.js takes multiple dictionaries as arguments.
