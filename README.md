@@ -34,7 +34,6 @@ In case you're interested, here are some available 4-letter ok-sounding twitter 
 * aqox
 * auaq
 * aucv
-* auth
 * auyv
 * axig
 * beoa
@@ -580,7 +579,6 @@ In case you're interested, here are some available 4-letter ok-sounding twitter 
 * pmow
 * pmuq
 * podl
-* post
 * pqef
 * pqij
 * ptuw

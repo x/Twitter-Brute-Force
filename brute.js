@@ -11,8 +11,8 @@ var request = require('request')
         }
         callback(err)
       })
-    }, 10)
-  
+    }, 100)
+
 process.argv.splice(2).forEach(function(fileName) {
   
   fs.readFile('./' + fileName, 'utf8', function(err, data) {
