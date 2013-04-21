@@ -34,6 +34,6 @@ All 4-letter twitter available twitter handles with no more than two consonants 
 
 http://peticol.as/twitter-handles/4-letter-ok-sounding.txt
 
-251,453 english words currently available from brute-forcing the (RIDYHEW)[http://www.codehappy.net/wordlist.htm] list
+251,453 english words currently available from brute-forcing the [RIDYHEW](http://www.codehappy.net/wordlist.htm) list
 
 http://peticol.as/twitter-handles/english-words.txt
