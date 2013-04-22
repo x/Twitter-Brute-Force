@@ -9,7 +9,7 @@ var request = require('request')
 
   /* queue of requests with a pool of 10 async */
   , q = async.queue(function(task, callback) {
-      request('http://www.twitter.com/' + task.name, function (err, res) {
+      request.head('http://www.twitter.com/' + task.name, function (err, res) {
         if(res && res.statusCode == 404) {
           available.write(task.name + '\n')
         }
