@@ -1,4 +1,4 @@
-# Available Twitter Handles
+# Available Usernames
 *Adapted from [x's](https://github.com/x) [Twitter Brute Force](https://github.com/x/Twitter-Brute-Force).*
 
 --------------------------------------------------------------------------------------------
@@ -9,9 +9,9 @@
 
 --------------------------------------------------------------------------------------------
 
-Available Twitter Handles is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter to find which words are available as twitter usernames.
+Available Usernames is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter and/or GitHub to find which words are available as handles.
 
-To avoid rate limiting, this script does __not__ use the Twitter REST API, it instead queries for the presumed profile's status code. As a result it generates false-positives on reserved account names.
+To avoid rate limiting, this script does __not__ use the Twitter/GitHub REST API, it instead queries for the presumed profile's status code. As a result it generates false-positives on reserved account names.
 
 
 ## Usage
@@ -21,21 +21,22 @@ To avoid rate limiting, this script does __not__ use the Twitter REST API, it in
 Clone the repository and install the dependencies.
 
 ```
-git clone git@github.com:NicholasRBowers/Available-Twitter-Handles.git twitter-handles
-cd twitter-handles
+git clone git@github.com:NicholasRBowers/Available-Usernames.git handles
+cd handles
 npm install
 ```
 
 ### brute.js
 
-The main script, brute.js takes multiple dictionaries as arguments.
+The main script, brute.js takes a mode and multiple dictionaries as arguments.
 
 Available handles go to a file called ```available```.
 
 ```
-node brute.js dictionary1 dictionary2 dictionary3
+node brute twitter dictionary1 dictionary2 dictionary3
 ```
 
+Supported modes currently include `twitter` and `github`.
 
 ### generate.js
 
@@ -56,7 +57,7 @@ A name generation script was further added by [FlavFS](https://github.com/FlavSF
 
 ## Dictionaries
 
-I've pushed the dictionaries that I've been using to a separate repo called [Brute-Force-Dictionaries](https://github.com/NicholasRBowers/Available-Twitter-Handles).
+I've pushed the dictionaries that I've been using to a separate repo called [Brute-Force-Dictionaries](https://github.com/NicholasRBowers/Brute-Force-Dictionaries).
 
 
 ## Results
