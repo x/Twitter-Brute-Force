@@ -9,7 +9,7 @@
 
 --------------------------------------------------------------------------------------------
 
-Available Twitter Handles is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter to find which words are available as twitter handles.
+Available Twitter Handles is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter to find which words are available as twitter usernames.
 
 To avoid rate limiting, this script does __not__ use the Twitter REST API, it instead queries for the presumed profile's status code. As a result it generates false-positives on reserved account names.
 
@@ -25,8 +25,6 @@ Available handles go to a file called ```available```.
 ```
 node brute.js dictionary1 dictionary2 dictionary3
 ```
-
-brute.js responds to ```SIGUSR1``` with the current number of handles processed.
 
 
 ### generate.js
@@ -48,17 +46,17 @@ A name generation script was further added by [FlavFS](https://github.com/FlavSF
 
 ## Dictionaries
 
-I've pushed the dictionaries that I've been using to a separate repo called [Twitter-Brute-Force-Dictionaries](https://github.com/dpeticol/Twitter-Brute-Force-Dictionaries)
+I've pushed the dictionaries that I've been using to a separate repo called [Brute-Force-Dictionaries](https://github.com/NicholasRBowers/Available-Twitter-Handles).
 
 
 ## Results
 
 In case you're interested, here are some results.
 
-All 4-letter twitter available twitter handles with no more than two consonants next to each other (pronounceable?)
+All available 4-letter Twitter handles with no more than two consonants next to each other (pronounceable?).
 
 http://peticol.as/twitter-handles/4-letter-ok-sounding.txt
 
-251,453 english words currently available from brute-forcing the [RIDYHEW](http://www.codehappy.net/wordlist.htm) list
+251,453 English words currently available from brute-forcing the [RIDYHEW](http://www.codehappy.net/wordlist.htm) list.
 
 http://peticol.as/twitter-handles/english-words.txt

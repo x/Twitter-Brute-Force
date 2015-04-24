@@ -1,7 +1,7 @@
 {
   "name": "available-twitter-handles",
   "version": "1.0.0",
-  "description": "Script using brute force to see which Twitter handles are available.",
+  "description": "Script using brute force to see which Twitter usernames are available.",
   "main": "brute.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
