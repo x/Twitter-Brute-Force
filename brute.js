@@ -28,7 +28,7 @@ fileNames.forEach(function(fileName) {
     if(err) { return console.log(err) }
 
     /* split file by lines */
-    data.split('\n').forEach(function(line) {
+    data.replace(/( |\t)+/g, '').split('\n').forEach(function(line) {
       if(line < 4) {
         console.log('ignoring '+line+' because 3 or less handles are all taken')
         return
