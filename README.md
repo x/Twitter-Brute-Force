@@ -1,4 +1,4 @@
-# Available Usernames
+# Available Handles
 *Adapted from [x's](https://github.com/x) [Twitter Brute Force](https://github.com/x/Twitter-Brute-Force).*
 
 --------------------------------------------------------------------------------------------
@@ -9,7 +9,7 @@
 
 --------------------------------------------------------------------------------------------
 
-Available Usernames is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter and/or GitHub to find which words are available as handles.
+Available Handles is a little script that takes a new-line-separated dictionary and hammers the fuck out Twitter or GitHub to find which words are available as usernames.
 
 To avoid rate limiting, this script does __not__ use the Twitter/GitHub REST API, it instead queries for the presumed profile's status code. As a result it generates false-positives on reserved account names.
 
@@ -21,7 +21,7 @@ To avoid rate limiting, this script does __not__ use the Twitter/GitHub REST API
 Clone the repository and install the dependencies.
 
 ```
-git clone git@github.com:NicholasRBowers/Available-Usernames.git handles
+git clone git@github.com:NicholasRBowers/Available-Handles.git handles
 cd handles
 npm install
 ```
@@ -30,7 +30,7 @@ npm install
 
 The main script, brute.js takes a mode and multiple dictionaries as arguments.
 
-Available handles go to a file called ```available```.
+Available usernames are written to files called `twitter.available` or `github.available`.
 
 ```
 node brute twitter dictionary1 dictionary2 dictionary3
@@ -64,7 +64,7 @@ I've pushed the dictionaries that I've been using to a separate repo called [Bru
 
 In case you're interested, here are some results.
 
-All available 4-letter Twitter handles with no more than two consonants next to each other (pronounceable?).
+All available 4-letter Twitter usernames with no more than two consonants next to each other (pronounceable?).
 
 http://peticol.as/twitter-handles/4-letter-ok-sounding.txt
 

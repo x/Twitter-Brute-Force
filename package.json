@@ -1,14 +1,14 @@
 {
-  "name": "available-twitter-handles",
+  "name": "available-handles",
   "version": "1.0.0",
-  "description": "Script using brute force to see which Twitter usernames are available.",
+  "description": "Script using brute force to see which Twitter or GitHub usernames are available.",
   "main": "brute.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NicholasRBowers/Available-Twitter-Handles.git"
+    "url": "https://github.com/NicholasRBowers/Available-Handles.git"
   },
   "keywords": [
     "available",
@@ -19,9 +19,9 @@
   "author": "@NicholasRBowers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NicholasRBowers/Available-Twitter-Handles/issues"
+    "url": "https://github.com/NicholasRBowers/Available-Handles/issues"
   },
-  "homepage": "https://github.com/NicholasRBowers/Available-Twitter-Handles",
+  "homepage": "https://github.com/NicholasRBowers/Available-Handles",
   "dependencies": {
     "async": "^0.9.0",
     "console-timestamp": "^0.3.0",
