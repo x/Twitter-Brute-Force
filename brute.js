@@ -9,8 +9,8 @@ var request = require('request')
 
   /* queue of requests with a pool of 10 async */
   , q = async.queue(function(task, callback) {
-      request.head('http://www.twitter.com/' + task.name, function (err, res) {
-        if(res && res.statusCode == 404) {
+      request.head('https://twitter.com/' + task.name, function (err, res) {
+        if(res && res.statusCode === 404) {
           available.write(task.name + '\n')
         }
         callback(err)
@@ -26,10 +26,10 @@ process.on('SIGUSR1', function(){
 fileNames.forEach(function(fileName) {
   fs.readFile('./' + fileName, 'utf8', function(err, data) {
     if(err) { return console.log(err) }
-    
+
     /* split file by lines */
     data.split('\n').forEach(function(line) {
-      if(line < 4) { 
+      if(line < 4) {
         console.log('ignoring '+line+' because 3 or less handles are all taken')
         return
       }
