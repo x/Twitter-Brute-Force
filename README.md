@@ -16,6 +16,16 @@ To avoid rate limiting, this script does __not__ use the Twitter REST API, it in
 
 ## Usage
 
+### Dependencies
+
+Clone the repository and install the dependencies.
+
+```
+git clone git@github.com:NicholasRBowers/Available-Twitter-Handles.git twitter-handles
+cd twitter-handles
+npm install
+```
+
 ### brute.js
 
 The main script, brute.js takes multiple dictionaries as arguments.
