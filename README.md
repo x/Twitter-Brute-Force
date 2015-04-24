@@ -5,8 +5,7 @@
 
 **Forked by**: [@NicholasRBowers](http://twitter.com/NicholasRBowers)
 
-**Original Author:**
-* [Twitter Brute Force](https://github.com/x/Twitter-Brute-Force) by [Devon Peticolas](https://github.com/x) @ Chartbeat
+**Original Author**: [Twitter Brute Force](https://github.com/x/Twitter-Brute-Force) by [Devon Peticolas](https://github.com/x) @ Chartbeat
 
 --------------------------------------------------------------------------------------------
 

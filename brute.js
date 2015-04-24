@@ -1,3 +1,5 @@
+// TODO - Search for false-positives in the results by connecting to the Twitter API.
+
 var request = require('request')
   , fs = require('fs')
   , async = require('async')
